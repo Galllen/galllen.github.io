@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body{
+    font-family: Poppins,serif;
+    background: linear-gradient(90deg, #340073 0%, #0A0A0A 100%);
+}
+p{
+    color: aquamarine;
+}
+.nav-link{
+    color: rgb(146, 145, 145);
+} 
+.navbar-nav .nav-link.active{
+   color:aquamarine;
+}
+.navbar-brand img{
+    width: 40px;
+}
+.navbar-toggler{
+    background-color: rgb(109, 87, 189);
+}
+.sidebar{
+    color: aquamarine;
+    background: linear-gradient(270deg, #340073 0%, #0A0A0A 100%);
+}
+.card{
+    background: linear-gradient(270deg, #340073 0%, #0A0A0A 100%);
+    color: aquamarine;
+}
+.card a{
+    text-decoration: none;
+    color: aquamarine;
+}
+.slide-text,
+.footer-text{
+    color:aquamarine ;
+    margin: auto auto;
+}
+footer,
+.btn-outline-primary{
+    background: linear-gradient(270deg, #340073 0%, #0A0A0A 100%);
+}
+.call-anim{
+    animation: call  2s ease 0s infinite normal forwards;
+}
+@keyframes call {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateY(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateY(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateY(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateY(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateY(-6px) rotate(1.2deg);
+	}
+}
+.media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:755px){
+    .carousel-indicators{
+        display: none;
+    }
+}
